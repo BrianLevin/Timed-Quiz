@@ -18,3 +18,10 @@
 .question-5 {          /*  created this css syntax to hide the questions before they are answered.  */
     display: none;
 }
+.finished-form-intials {    /*  created this css syntax to hide the intials before the  questions are answered  */
+    display: none;
+}
+
+.highscore {                    /*  created this css syntax to hide the scores page before the quiz is complete .  */
+    display: none;
+}
