@@ -9,8 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css" />
     <title>Timed Quiz </title> <!-- Title of the webpage-->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+        integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,24 +25,34 @@
             <button type="button" class="btn btn-primary btn-lg btn-block">Begin Quiz</button>
         </div>
         <!-- Added  bootstrap buttons to begin quiiz.-->
-        <div class="question 1">
+
+        <h2 id="countdown"></h2>
+        <div class="question-1" id="question-1">
             <h3> What color is the sky?</h3>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <!--attributes=answer-->
+            <!-- made an answer attribute  to idenify the right answers when the user clicks the button. for this question. the  bt1-q1 is the correct answer because it Ideingifies "Blue" as the correct answer by being 0 index within the answer key. -->
+            <button id="btn1-q1" type="button" answer="Blue" class="btn btn-primary" data-toggle="button"
+                aria-pressed="false">
                 <!-- Added  my first question with multiple choice button selection-->
                 Blue
             </button>
+            <!--  gave certain buttons the "wrong" attribute to idenify to the user when they click the wrong answer, they will see they got the question wrong through the "wrong" atribute-->
 
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button id="btn2-q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
+                aria-pressed="false">
                 Red
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button id="btn3-q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
+                aria-pressed="false">
                 Green
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button id="btn4-q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
+                aria-pressed="false">
                 Orange
             </button>
         </div>
-        <div class="question 2">
+        <div class="eval"></div>
+        <div class="question-2" id=>
             <!-- Added a second question with multiple  choice button selection-->
             <h3> What year did the United States declare independence from Britain? </h3>
             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
@@ -56,7 +68,7 @@
                 1632
             </button>
         </div>
-        <div class="question 3">
+        <div class="question-3">
             <!-- Added a third question with multiple choice button selection-->
             <h3> Who was the youngest heavyweight champion in Boxing History?</h3>
             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
@@ -74,7 +86,7 @@
 
 
         </div>
-        <div class="question 4">
+        <div class="question-4">
             <!-- Added a 4th question with multiple   choice button selection-->
             <h3> Which is the farthest planet from the sun?</h3>
             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
@@ -91,7 +103,7 @@
             </button>
 
         </div>
-        <div class="question 5">
+        <div class="question-5">
             <!-- Added a 5th question  with multiple choice button selection-->
             <h3> What is the average interior tempature of Antarctica?</h3>
             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
@@ -108,7 +120,7 @@
             </button>
 
         </div>
-        <div class="finished form intials">
+        <div class="finished-form-intials">
             <!-- added an form which shows  the users final score and  allows the user to write their intials after completing the quiz -->
             <h3> All Done!</h3>
             <p> your finished score is...</p>
