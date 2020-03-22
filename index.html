@@ -30,13 +30,13 @@
         <div class="question-1" id="question-1">
             <h3> What color is the sky?</h3>
             <!--attributes=answer-->
-            <!-- made an answer attribute  to idenify the right answers when the user clicks the button. for this question. the  bt1-q1 is the correct answer because it Ideingifies "Blue" as the correct answer by being 0 index within the answerKey index. -->
+            <!-- made an answer attribute (answer=)  to idenify the right answers when the user clicks the button. for this question. the  bt1-q1 is the correct answer because it Ideingifies "Blue" as the correct answer by being 0 index within the answerKey index. -->
             <button id="btn1-q1" type="button" answer="Blue" class="btn btn-primary" data-toggle="button"
                 aria-pressed="false">
                 <!-- Added  my first question with multiple choice button selection-->
                 Blue
             </button>
-            <!--  gave certain buttons the "wrong" attribute to idenify to the user when they click the wrong answer, they will see they got the question wrong through the "wrong" atribute-->
+            <!--  gave certain buttons the "wrong" attribute to idenify to the user when they click the wrong answer, they will see they got the question wrong through the "wrong" atribute because the answer was not in the answer key and was instead assigned as "wrong"-->
 
             <button id="btn2-q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
                 aria-pressed="false">
@@ -55,32 +55,35 @@
         <div class="question-2" id=>
             <!-- Added a second question with multiple  choice button selection-->
             <h3> What year did the United States declare independence from Britain? </h3>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <!-- Added a variety of attributes  (answer=) with 1776 being the correct answer. it will be accessed through  the 1 index in the  answerKey array-->
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 1885
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 1967
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="1776" data-toggle="button" aria-pressed="false">
                 1776
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 1632
             </button>
         </div>
         <div class="question-3">
             <!-- Added a third question with multiple choice button selection-->
+            <!-- Added a variety of attributes  (answer=) with Mike Tyson being the correct answer. it will be accessed through  the 2 index in the  answerKey array-->
             <h3> Who was the youngest heavyweight champion in Boxing History?</h3>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 Muhammad Ali
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer=" Mike Tyson" data-toggle="button"
+                aria-pressed="false">
                 Mike Tyson
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 Rocky Marciano
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 Jack Dempsey
             </button>
 
@@ -88,34 +91,36 @@
         </div>
         <div class="question-4">
             <!-- Added a 4th question with multiple   choice button selection-->
+            <!-- Added a variety of attributes (answer=) with Neptune being the correct answer. it will be accessed through  the 2 index in the answerKey array-->
             <h3> Which is the farthest planet from the sun?</h3>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 Uranious
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 Pluto
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="Neptune" data-toggle="button" aria-pressed="false">
                 Neptune
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 murcury
             </button>
 
         </div>
         <div class="question-5">
             <!-- Added a 5th question  with multiple choice button selection-->
+            <!-- Added a variety of attributes (answer=) with -70.6 F being the correct answer. it will be accessed through  the 3 index in the  answerKey array-->
             <h3> What is the average interior tempature of Antarctica?</h3>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="-70.6" data-toggle="button" aria-pressed="false">
                 −70.6 °F
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 −55.7 °F
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 −100.2 °F
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+            <button type="button" class="btn btn-primary" answer="wrong" data-toggle="button" aria-pressed="false">
                 −35.8 °F
             </button>
 
