@@ -392,8 +392,26 @@ finishedForm.addEventListener("click", function (event) { // added local storage
         displayMessage('success! your intials have been stored');
 
 
-        localStorage.setItem("finished-form-intials") // this will store the users intials
+        localStorage.setItem("finished-form-intials", form); // this will store the users intials
+        var points = [2, 2, 2, 2, 2]  // each question is worth 2 points.
 
 
-        highScore.addEventListener("click", function (event) {
+        highScore.addEventListener("click", function (event) { // These if statements will determine the users score which will be stored with their intials
+            if (answerKey === points[arr]) {
+                displayMessage("10 points!")
+            } else if (answerKey === points[0, 1, 2, 3]) {
+                displayMessage('8 points!')
+            }
+            else if (answerKey === points[0, 1, 2]) {
+                displayMessage('6 points!')
+            }
+            else if (answerKey === points[0, 1]) {
+                displayMessage('4 points!')
+            }
+            else if (answerKey === points[0]) {
+                displayMessage('2 points!')
+            }
+            else (answerKey === points[] {
+                displayMessage('0 points!')
+            }
             localStorage.setItem("Highscores");
