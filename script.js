@@ -380,7 +380,20 @@ startQuizButton.addEventListener("click", function (event) {
         }, 15000);
     })
 })
-finishedForm.addEventListener("click", function (event) {
-    localStorage.setItem("finished-form-intials")
-})
-highScore.addEventListener("click")
+finishedForm.textContent = form;
+
+finishedForm.addEventListener("click", function (event) { // added local storage for the user to put their intitials
+    var form = document.querySelector('.finished-form-intials').value // this will input the user intials value on the page.
+    if (form = " ") {
+        displayMessage('error, intials can"t be blank');
+    } else if (form = '0123456789') {
+        displaymessage('error, intials can not have numbers in them');
+    } else {
+        displayMessage('success! your intials have been stored');
+
+
+        localStorage.setItem("finished-form-intials") // this will store the users intials
+
+
+        highScore.addEventListener("click", function (event) {
+            localStorage.setItem("Highscores");
