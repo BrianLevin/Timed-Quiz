@@ -35,6 +35,7 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3; //subtracted 3 seconds each time the user got the wrong answer
         }
     })
 
@@ -54,6 +55,7 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3; //subtracted 3 seconds each time the user got the wrong answer
         }
     })
 
@@ -72,6 +74,7 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
 
@@ -90,6 +93,7 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
 
@@ -97,7 +101,7 @@ startQuizButton.addEventListener("click", function (event) {
 
         var answer = document.getElementById("btn1Q2").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[1]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -108,14 +112,16 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
+
     })
 
     btn2Q2.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn2Q2").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[1]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -125,14 +131,16 @@ startQuizButton.addEventListener("click", function (event) {
         else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
+
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn3Q2.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn3Q2").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[1]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -143,13 +151,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn4Q2.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn4Q2").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[1]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -160,13 +169,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn1Q3.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn1Q3").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[2]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -177,13 +187,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn2Q3.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn2Q3").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[2]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -194,13 +205,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn3Q3.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn3Q3").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[2]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -211,30 +223,33 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn4Q3.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn4Q3").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[2]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
             eval.innerHTML = ' ';
             eval.innerHTML = "correct"; // this will evaluate and show the answer as "correct" on the html page 
+            secondsLeft = --3;
         }
         else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn1Q4.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn1Q4").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[3]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -245,13 +260,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn2Q4.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn2Q4").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[3]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -262,30 +278,33 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn3Q4.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn3Q4").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[3]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
             eval.innerHTML = ' ';
             eval.innerHTML = "correct"; // this will evaluate and show the answer as "correct" on the html page 
+            secondsLeft = --3;
         }
         else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn4Q4.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn4Q4").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[3]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -296,13 +315,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn1Q5.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn1Q5").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[4]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -313,13 +333,14 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn2Q5.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn2Q5").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[4]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -330,6 +351,7 @@ startQuizButton.addEventListener("click", function (event) {
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
 
@@ -337,7 +359,7 @@ startQuizButton.addEventListener("click", function (event) {
 
         var answer = document.getElementById("btn3Q5").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[4]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
@@ -347,29 +369,35 @@ startQuizButton.addEventListener("click", function (event) {
         else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
+
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
         }
     })
     btn4Q5.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
 
         var answer = document.getElementById("btn4Q5").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+        if (answer === answerKey[4]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
             //$('.eval').append('correct');
             //document.getElementsByClassName("eval").innerHTML("correct"); 
             //eval.empty(); 
             eval.innerHTML = ' ';
-            eval.innerHTML = "correct"; // this will evaluate and show the answer as "correct" on the html page 
+            eval.innerHTML = "correct";// this will evaluate and show the answer as "correct" on the html page 
+
         }
         else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
             //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
             eval.innerHTML = ' ';
             eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
+            secondsLeft = --3;
+
         }
         // added a time interval count down to my quiz
         var timeInterval = setInterval(function () {
             countDown.textContent = secondsLeft + " seconds remaining";
             secondsLeft--;
+
 
             if (secondsLeft === 0) {
                 countDown.textContent = "";
@@ -379,6 +407,9 @@ startQuizButton.addEventListener("click", function (event) {
 
         }, 15000);
     })
+})
+var timeSubtraction = setInterval(function () {
+
 })
 finishedForm.textContent = form;
 
