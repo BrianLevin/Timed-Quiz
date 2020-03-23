@@ -18,29 +18,71 @@ var answerKey = ["Blue", "1776", "Mike Tyson", "Neptune", "-70.6"]; // Added the
 startQuizButton.addEventListener("click", function (event) {
     event.preventDefault(); // added the event.prevent default  so the page will not refresh until the quiz is completed.
 
-    $('#question-1').show(); // used a tutor who reconmended using j query for my assignment. used this j query method to show question one when the user clicks start quiz
-    $("#btn1-q1").on("click", function (event) { // this is the first button for question 1.
-        var answer = $('#btn1-q1').attr('answer');//  made the var answer to hold the correct value if the button id and the attribute match the correct user choice
+    //$('#question-1').show();
+    // used event listeners to target the button clicks                            // used a tutor who reconmended using j query for my assignment. used this j query method to show question one when the user clicks start quiz
+    btn1Q1.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
+
+        var answer = document.getElementById("btn1Q1").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
         console.log(answer);
         if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
-            $('.eval').append('correct');
-
+            //$('.eval').append('correct');
+            //document.getElementsByClassName("eval").innerHTML("correct"); 
+            //eval.empty(); 
+            eval.innerHTML = ' ';
+            eval.innerHTML = "correct"; // this will evaluate and show the answer as "correct" on the html page 
         }
         else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
-            $('.eval').append('wrong');
+            //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
+            eval.innerHTML = ' ';
+            eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
         }
     })
-    $("#btn2-q1").on("click", function (event) {  //  this is the second button for question 1.
-        var answer = $('#btn2-q1').attr('answer'); //  made the var answer to hold the correct value if the button id and the attribute match the correct user choice
-        console.log(answer);
-        if (answer === answerKey[0]) { // if the attribute is  === to the answerKey, then the answer will append correct on the screen.
-            $('.eval').append('correct');
 
+
+    btn1Q2.addEventListener('click', function (event) { // changed the btn1-q1 to btnn1Q1 so my page could format it correctly after saving
+
+        var answer = document.getElementById("btn1Q1").getAttribute("answer"); // added the var answer to get the id and attribute from the html page and see if the value matches the var Answer Key.
+        console.log(answer);
+        if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+            //$('.eval').append('correct');
+            //document.getElementsByClassName("eval").innerHTML("correct"); 
+            //eval.empty(); 
+            eval.innerHTML = ' ';
+            eval.innerHTML = "correct"; // this will evaluate and show the answer as "correct" on the html page 
         }
-        else {  // if the attribute is incorrect and !=== to the index in the AanswerKey, the  the test will append incorrect on the screen.
-            $('.eval').append('wrong');
+        else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
+            //document.getElementsByClassName("eval").innerHTML("wrong");      //$('.eval').append('wrong');
+            eval.innerHTML = ' ';
+            eval.innerHTML = "wrong"; // this will evaluate and show the answer as "incorrect" on the html page
         }
     })
+
+
+
+    //$("#btn1-q1").on("click", function (event) { // this is the first button for question 1.
+    //var answer = $('#btn1-q1').attr('answer');//  made the var answer to hold the correct value if the button id and the attribute match the correct user choice
+    //console.log(answer);
+    //if (answer === answerKey[0]) { // if the attribute is === to the  answerKey index number, then that will be the  correct answer and apend on the page
+    //$//('.eval').append('correct');
+
+    //}
+    //else { // if the tribute is incorrect and !=== to the answer in the answerKey, then the question will show incoreect and append incorrect on the page.
+    //$('.eval').append('wrong');
+    //}
+    //})
+    //$("#btn2-q1").on("click", function (event) {  //  this is the second button for question 1.
+    //var answer = $('#btn2-q1').attr('answer'); //  made the var answer to hold the correct value if the button id and the attribute match the correct user choice
+    //console.log(answer);
+    //if (answer === answerKey[0]) { // if the attribute is  === to the answerKey, then the answer will append correct on the screen.
+    //$('.eval').append('correct');
+    // var score= score +2;
+
+    //}
+    //else {  // if the attribute is incorrect and !=== to the index in the AanswerKey, the  the test will append incorrect on the screen.
+    //$('.eval').append('wrong');
+    // nterval = interval - 1000;
+    //}
+    //})
     $("#btn3-q1").on("click", function (event) {  //  this is the third button for question 1.
         var answer = $('#btn3-q1').attr('answer'); //  made the var answer to hold the correct value if the button id and the attribute match the correct user choice
         console.log(answer);
