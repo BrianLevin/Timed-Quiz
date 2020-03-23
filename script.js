@@ -381,5 +381,6 @@ startQuizButton.addEventListener("click", function (event) {
     })
 })
 finishedForm.addEventListener("click", function (event) {
-
+    localStorage.setItem("finished-form-intials")
 })
+highScore.addEventListener("click")
