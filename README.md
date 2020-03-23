@@ -14,7 +14,7 @@ For this Assignment, we had to create a multiple choice  timed quiz that would t
 
 **Syntax Used**
 
-I used HTML, CSS,  Bootstrap, and Javascript for this assignment. I created ID and Class tags on the Html page which linked the Javascript to utilize those elements.  I used bootstrap elements to create buttons and forms for the users input. I used  Javascript varibles to store values and created query selectors to target my html elements. I then used add event listeners to dynamically enable the user to use the html elements. if the user got the answer correct it will display as correct and add points to his score. if the user got an incorrec answer. it would come up as incorrect and the user would get 3 seconds subtracted from his 15 second time limit. The user then would store his final score with the max amount being 10 points.
+I used HTML, CSS,  Bootstrap, and Javascript for this assignment. I created ID and Class tags on the Html page which linked the Javascript to utilize those elements.  I used bootstrap elements to create buttons and forms for the users input. I used  Javascript varibles to store values and created query selectors to target my html elements. I then used add event listeners to dynamically enable the user to use the html elements. if the user got the answer correct it will display as correct and add points to his score. if the user got an incorrect answer, it would come up as incorrect and the user would get 3 seconds subtracted from his 15 second time limit. The user then would store his final score with the max amount being 10 points if they got all 5 questions correct.
 
 **Learning Objectives**
 
