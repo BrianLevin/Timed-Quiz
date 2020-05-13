@@ -20,5 +20,8 @@ function startQuix() {
     // un-hide questions section
     questionsEl.removeAttribute("class");
 
+    // start timer
+    timerId = setInterval(clockTick, 1000);
+
 }
 
