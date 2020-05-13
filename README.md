@@ -2,6 +2,11 @@
 
 # Timed Quiz
 
+# Timed Quiz
+
+![](image/Online-quiz-maker-with-timer.jpg)
+
+
 
 **Assignment Objectives**
 
@@ -9,8 +14,12 @@ For this Assignment, we had to create a multiple choice  timed quiz that would t
 
 **Syntax Used**
 
-I used HTML, CSS,  Bootstrap, and Javascript for this assignment. I created ID and Class tags on the Html page which linked the Javascript to utilize methods affecting those elements.  I used bootstrap elements to create buttons and forms for the users input. I also used Jquery and regular Javascript to   dynamically target the Html and Bootstrap to make the webpage interactive to the user.
+I used HTML, CSS,  Bootstrap, and Javascript for this assignment. I created ID and Class tags on the Html page which linked the Javascript to utilize those elements.  I used bootstrap elements to create buttons and forms for the users input. I used  Javascript varibles to store values and created query selectors to target my html elements. I then used add event listeners to dynamically enable the user to use the html elements. if the user got the answer correct it will display as correct and add points to his score. if the user got an incorrect answer, it would come up as incorrect and the user would get 3 seconds subtracted from his 15 second time limit.  These came up as if else staements. The user then would store his final score with the max amount being 10 points if they got all 5 questions correct.
 
 **Learning Objectives**
 
-I want to learn  a deeper understanding of Javascript and how to utilize the language. I want to be able to understand the functions and methods i'm  creating to  show the sites interaction to the user. I also want to continue to practice, design, and utilize Html, Css, and Bootstrap.
+I want to learn  a deeper understanding of Javascript and how to utilize the language. I want to be able to understand the functions and methods i'm  creating to  show the sites interaction to the user. I also want to continue to practice, design, and utilize Html, Css, and Bootstrap.[](
+
+
+
+
