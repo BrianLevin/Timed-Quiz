@@ -1,191 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" /> <!-- created a style href-->
-    <title>Timed Quiz </title> <!-- Title of the webpage-->
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
-        integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
-    <div class="container">
-        <!-- Added a div container-->
-        <h1>Timed Quiz</h1> <!-- Added a title to the user page-->
-        <div class="start">
-            <!-- Added a  start button for the user to  click too start the quiz-->
-            <h2> Please hit start to begin quiz</h2>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Begin Quiz</button>
-        </div>
-        <!-- Added  bootstrap buttons to begin quiiz.-->
+    <div class="scores"><a href="highscores.html">View Highscores</a></div>
 
-        <h2 id="countdown"></h2>
-        <div class="question-1" id="question-1">
-            <h3> What color is the sky?</h3>
-            <!--attributes=answer-->
-            <!-- made an answer attribute (answer=)  to idenify the right answers when the user clicks the button. for this question. the  bt1-q1 is the correct answer because it Ideingifies "Blue" as the correct answer by being 0 index within the answerKey index. -->
-            <!-- Made the button id and answer attribute for the var answer key to idenify if the user choice is the correct answer-->
-            <!-- the correct button id and answer attribute is Blue for question 1-->
-            <button id="btn1Q1" type="button" answer="Blue" class="btn btn-primary" data-toggle="button"
-                aria-pressed="false">
-                <!-- Added  my first question with multiple choice button selection-->
-                Blue
-            </button>
-            <!--  gave certain buttons the "wrong" attribute to idenify to the user when they click the wrong answer, they will see they got the question wrong through the "wrong" atribute because the answer was not in the answer key and was instead assigned as "wrong"-->
+    <div class="timer">Time: <span id="time">0</span></div>
 
-            <button id="btn2Q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
-                aria-pressed="false">
-                Red
-            </button>
-            <button id="btn3Q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
-                aria-pressed="false">
-                Green
-            </button>
-            <button id="btn4Q1" type="button" answer="wrong" class="btn btn-primary" data-toggle="button"
-                aria-pressed="false">
-                Orange
-            </button>
-        </div>
-        <div class="eval"></div>
-        <div class="question-2" id="question-2">
-            <!-- Added a second question with multiple  choice button selection-->
-            <!-- Made the button id and answer attribute for the var answer key to idenify if the user choice is the correct answer-->
-            <h3> What year did the United States declare independence from Britain? </h3>
-            <!-- Added a variety of attributes  (answer=) with 1776 being the correct answer. it will be accessed through  the 1 index in the  answerKey array-->
-            <button id="btn1Q2" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                1885
-            </button>
-            <button id="btn2Q2" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                1967
-            </button>
-            <button id="btn3Q2" type="button" class="btn btn-primary" answer="1776" data-toggle="button"
-                aria-pressed="false">
-                1776
-            </button>
-            <button id="btn4Q2" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                1632
-            </button>
-        </div>
-        <div class="question-3" id="question-3">
-            <!-- Added a third question with multiple choice button selection-->
-            <!-- Made the button id and answer attribute for the var answer key to idenify if the user choice is the correct answer-->
-            <!-- Added a variety of attributes  (answer=) with Mike Tyson being the correct answer. it will be accessed through  the 2 index in the  answerKey array-->
-            <h3> Who was the youngest heavyweight champion in Boxing History?</h3>
-            <button id="btn1Q3" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                Muhammad Ali
-            </button>
-            <button id="btn2Q3" type="button" class="btn btn-primary" answer=" Mike Tyson" data-toggle="button"
-                aria-pressed="false">
-                Mike Tyson
-            </button>
-            <button id="btn3Q3" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                Rocky Marciano
-            </button>
-            <button id="btn4Q3" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                Jack Dempsey
-            </button>
-
-
-        </div>
-        <div class="question-4" id=question-4>
-            <!-- Added a 4th question with multiple   choice button selection-->
-            <!-- Made the button id and answer attribute for the var answer key to idenify if the user choice is the correct answer-->
-            <!-- Added a variety of attributes (answer=) with Neptune being the correct answer. it will be accessed through  the 3 index in the answerKey array-->
-            <h3> Which is the farthest planet from the sun?</h3>
-            <button id="btn1Q4" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                Uranious
-            </button>
-            <button id="btn2Q4" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                Pluto
-            </button>
-            <button id="btn3Q4" type="button" class="btn btn-primary" answer="Neptune" data-toggle="button"
-                aria-pressed="false">
-                Neptune
-            </button>
-            <button id="btn4Q4" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                Mercury
-            </button>
-
-        </div>
-        <div class="question-5" id=question-5>
-            <!-- Added a 5th question  with multiple choice button selection-->
-
-            <!-- Made the button id and answer attribute for the var answer key to idenify if the user choice is the correct answer-->
-            <!-- Added a variety of attributes (answer=) with -70.6 F being the correct answer. it will be accessed through  the 4 index in the  answerKey array-->
-            <h3> What is the average interior tempature of Antarctica?</h3>
-            <button id="btn1Q5" type="button" class="btn btn-primary" answer="-70.6°F" data-toggle="button"
-                aria-pressed="false">
-                −70.6 °F
-            </button>
-            <button id="btn2Q5" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                −55.7 °F
-            </button>
-            <button id="btn3Q5" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                −100.2 °F
-            </button>
-            <button id="btn4Q5" type="button" class="btn btn-primary" answer="wrong" data-toggle="button"
-                aria-pressed="false">
-                −35.8 °F
-            </button>
-
-        </div>
-        <div class="finished-form-intials">
-            <!-- added an form which shows  the users final score and  allows the user to write their intials after completing the quiz -->
-            <h3> All Done!</h3>
-            <p> your finished score is...</p>
-            <h4> Enter Initials</h4>
-            <form>
-                <div class="form-row align-items-center">
-                    <div class="col-auto">
-                        <label class="sr-only" for="inlineFormInput">Initials</label>
-                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Initials">
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                    </div>
-            </form>
-        </div>
-        <div class="highscores">
-            <!-- Added a highscores form which allows the user to store thier high score data and retake the quiz or to clear the high score results.-->
-
-            <h2> High Scores</h2>
-            <input class="form-control" type="text" placeholder="" readonly>
-            <!-- Added Additional buttons to the highscore form-->
-            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go Back</a>
-            <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Clear Score</a>
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the time
+                limit. Keep in mind that incorrect answers will penalize your
+                score/time by ten seconds!
+            </p>
+            <button id="start">Start Quiz</button>
         </div>
 
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+                Enter initials: <input type="text" id="initials" max="3" />
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 
 </html>
