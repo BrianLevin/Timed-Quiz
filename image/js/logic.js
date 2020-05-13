@@ -50,6 +50,9 @@ function getQuestions() {
 
         choiceNode.textContent = i + 1 + ". " + choice;
 
+        // attach click event listener to each choice
+        choiceNode.onclick = questionClick;
+
 
     });
 
