@@ -33,5 +33,9 @@ function getQuestions() {
     // get current question object from array
     var currentQuestion = questions[currentQuestionIndex];
 
+    // update title with current question
+    var titleEl = document.getElementById("question-title");
+    titleEl.textContent = currentQuestion.title;
+
 }
 
