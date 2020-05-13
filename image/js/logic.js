@@ -37,5 +37,10 @@ function getQuestions() {
     var titleEl = document.getElementById("question-title");
     titleEl.textContent = currentQuestion.title;
 
+
+    // clear out any old question choices
+    choicesEl.innerHTML = "";
+
+
 }
 
