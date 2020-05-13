@@ -41,6 +41,11 @@ function getQuestions() {
     // clear out any old question choices
     choicesEl.innerHTML = "";
 
+    // loop over choices
+    currentQuestion.choices.forEach(function (choice, i) {
+
+
+    });
 
 }
 
