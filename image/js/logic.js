@@ -30,7 +30,8 @@ function startQuix() {
 }
 
 function getQuestions() {
-
+    // get current question object from array
+    var currentQuestion = questions[currentQuestionIndex];
 
 }
 
