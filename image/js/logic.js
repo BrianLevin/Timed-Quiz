@@ -26,6 +26,8 @@ function startQuix() {
     // show starting time
     timerEl.textContent = time;
 
+    getQuestions();
+
 
 }
 
