@@ -17,5 +17,8 @@ function startQuix() {
     var startScreenEl = document.getElementById("start-screen");
     startScreenEl.setAttribute("class", "hide");
 
+    // un-hide questions section
+    questionsEl.removeAttribute("class");
+
 }
 
