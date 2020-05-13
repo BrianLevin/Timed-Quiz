@@ -53,6 +53,9 @@ function getQuestions() {
         // attach click event listener to each choice
         choiceNode.onclick = questionClick;
 
+        // display on the page
+        choicesEl.appendChild(choiceNode);
+
 
     });
 
