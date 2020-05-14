@@ -100,5 +100,8 @@ function questionnClick() {
 function quizEnd() {
     // stop timer
     clearInterval(timerId);
+    // show end screen
+    var endScreenEl = document.getElementById("end-screen");
+    endScreenEl.removeAttribute("class");
 
 }
