@@ -124,3 +124,9 @@ function clockTick() {
     }
 
 }
+
+function saveHighscore() {
+
+
+
+}
