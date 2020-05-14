@@ -6,4 +6,7 @@ function printHighscores() {
         return b.score - a.score;
     });
 
+    highscores.forEach(function (score) {
+
+    });
 }
