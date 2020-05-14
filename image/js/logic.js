@@ -74,6 +74,7 @@ function questionnClick() {
             time = 0;
         }
 
-
+        // display new time on page
+        timerEl.textContent = time;
 
     }
