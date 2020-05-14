@@ -10,7 +10,9 @@ function printHighscores() {
         // create li tag for each high score
         var liTag = document.createElement("li");
         liTag.textContent = score.initials + " - " + score.score;
-
+        // display on page
+        var olEl = document.getElementById("highscores");
+        olEl.appendChild(liTag);
 
 
     });
