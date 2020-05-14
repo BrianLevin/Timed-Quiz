@@ -114,5 +114,8 @@ function quizEnd() {
 }
 
 function clockTick() {
+    // update time
+    time--;
+    timerEl.textContent = time;
 
 }
