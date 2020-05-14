@@ -7,6 +7,11 @@ function printHighscores() {
     });
 
     highscores.forEach(function (score) {
+        // create li tag for each high score
+        var liTag = document.createElement("li");
+        liTag.textContent = score.initials + " - " + score.score;
+
+
 
     });
 }
