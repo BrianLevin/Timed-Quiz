@@ -153,3 +153,5 @@ function checkForEnter(event) {
         saveHighscore();
     }
 }
+// user clicks button to submit initials
+submitBtn.onclick = saveHighscore;
