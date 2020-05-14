@@ -126,7 +126,8 @@ function clockTick() {
 }
 
 function saveHighscore() {
-
+    // get value of input box
+    var initials = initialsEl.value.trim();
 
 
 }
