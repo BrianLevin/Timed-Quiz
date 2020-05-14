@@ -80,9 +80,14 @@ function questionnClick() {
 
         // display new time on page
         timerEl.textContent = time;
+        // play "wrong" sound effect
+        sfxWrong.play();
+
         feedbackEl.textContent = "Wrong!";
 
     } else {
+        // play "right" sound effect
+        sfxRight.play();
         feedbackEl.textContent = "Correct!";
     }
     // flash right/wrong feedback on page for half a second
