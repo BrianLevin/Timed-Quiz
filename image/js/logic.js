@@ -76,5 +76,9 @@ function questionnClick() {
 
         // display new time on page
         timerEl.textContent = time;
+        feedbackEl.textContent = "Wrong!";
 
+    } else {
+        feedbackEl.textContent = "Correct!";
     }
+}
