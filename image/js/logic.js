@@ -95,4 +95,6 @@ function questionnClick() {
         getQuestion();
     }
 
-} 
+}
+
+function quizEnd() {
