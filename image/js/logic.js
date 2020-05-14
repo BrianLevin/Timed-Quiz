@@ -134,5 +134,10 @@ function saveHighscore() {
         var highscores =
             JSON.parse(window.localStorage.getItem("highscores")) || [];
 
+        // format new score object for current user
+        var newScore = {
+            score: time,
+            initials: initials
+        };
 
     }
