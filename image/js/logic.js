@@ -57,7 +57,8 @@ function getQuestions() {
 
         // display on the page
         choicesEl.appendChild(choiceNode);
-
+        // display new time on page
+        timerEl.textContent = time;
 
     });
 
