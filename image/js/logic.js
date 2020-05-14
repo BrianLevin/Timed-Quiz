@@ -98,3 +98,7 @@ function questionnClick() {
 }
 
 function quizEnd() {
+    // stop timer
+    clearInterval(timerId);
+
+}
