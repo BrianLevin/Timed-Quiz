@@ -22,3 +22,7 @@ function clearHighscores() {
     window.localStorage.removeItem("highscores");
     window.location.reload();
 }
+document.getElementById("clear").onclick = clearHighscores;
+
+// run function when page loads
+printHighscores();
