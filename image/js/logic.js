@@ -86,4 +86,7 @@ function questionnClick() {
     setTimeout(function () {
         feedbackEl.setAttribute("class", "feedback hide");
     }, 1000);
-}
+    // move to next question
+    currentQuestionIndex++;
+
+} 
