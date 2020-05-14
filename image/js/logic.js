@@ -139,5 +139,8 @@ function saveHighscore() {
             score: time,
             initials: initials
         };
+        // save to localstorage
+        highscores.push(newScore);
+        window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
     }
