@@ -112,4 +112,7 @@ function quizEnd() {
     // hide questions section
     questionsEl.setAttribute("class", "hide");
 }
+
+function clockTick() {
+
 }
