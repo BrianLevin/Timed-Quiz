@@ -34,7 +34,6 @@ Here is the scoreboard with all the users scores:
 
 ![Highscore Screenshot](images/highscore.png)
 
-https://brianlevin.github.io/Timed-Quiz/
 
 ## Libraries,framewprks, and syntax:
 
