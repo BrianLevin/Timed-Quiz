@@ -13,7 +13,7 @@ Here is the homepage:
 ![Home Screenshot](images/Homepage.png)
 
 This is the first question:
-![Question1 Screenshot](images/q1.png)
+![Question1 Screenshot](images/q2.png)
 
 This is the second question:
 ![Question2 Screenshot](images/q2.png)
