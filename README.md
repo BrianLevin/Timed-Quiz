@@ -25,7 +25,7 @@ This is the fourth question:
 ![Question4 Screenshot](images/q1.png)
 
 This is the fifth question:
-![Question5 Screenshot](images/q5.png)## Deployed Application:
+![Question5 Screenshot](images/q5.png)
 
 Here is where you add your final intials when the quiz is finished:
 
@@ -36,7 +36,7 @@ Here is the scoreboard with all the users scores:
 ![Highscore Screenshot](images/highscore.png)
 
 
-## Libraries,framewprks, and syntax:
+## Libraries and Framewprks: 
 
 - Html
  - Css
