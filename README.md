@@ -10,7 +10,8 @@ In this assignment, we had to create a timed quiz. The quiz had to have a time l
   
 Here is the homepage:
 
-![Home Screenshot](images/homepage.png)
+![Home Screenshot](images/Homepage.png)
+
 This is the first question:
 ![Question1 Screenshot](images/q1.png)
 
